@@ -1,0 +1,5 @@
+*.c linguist-detectable=true
+*.py linguist-detectable=true
+*.tcl linguist-language=Shell
+scripts/* linguist-detectable=true
+output/* linguist-documentation
