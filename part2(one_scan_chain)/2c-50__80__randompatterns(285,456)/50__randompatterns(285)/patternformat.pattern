@@ -1,0 +1,383 @@
+STIL 1.0 { Design 2005; }
+Header {
+   Title "  TetraMAX(R)  R-2020.09-SP3-i20210113_181330 STIL output";
+   Date "Fri Dec 15 20:51:50 2023";
+   History {
+      Ann {*     Uncollapsed Stuck Fault Summary Report *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* fault class                     code   #faults *}
+      Ann {* ------------------------------  ----  --------- *}
+      Ann {* Detected                         DT      53150 *}
+      Ann {* Possibly detected                PT          0 *}
+      Ann {* Undetectable                     UD       1192 *}
+      Ann {* ATPG untestable                  AU          2 *}
+      Ann {* Not detected                     ND          0 *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* total faults                             54344 *}
+      Ann {* test coverage                           100.00% *}
+      Ann {* ----------------------------------------------- *}
+      Ann {*  *}
+      Ann {*            Pattern Summary Report *}
+      Ann {* ----------------------------------------------- *}
+      Ann {* #internal patterns                         570 *}
+      Ann {*     #basic_scan patterns                   570 *}
+      Ann {* ----------------------------------------------- *}
+      Ann {*  *}
+      Ann {* rule  severity  #fails  description *}
+      Ann {* ----  --------  ------  --------------------------------- *}
+      Ann {* N23   warning        1  inconsistent UDP *}
+      Ann {* B8    warning        2  unconnected module input pin *}
+      Ann {* B9    warning        1  undriven module internal net *}
+      Ann {*  *}
+      Ann {* clock_name        off  period    LE_time  TE_time  meas_time  usage *}
+      Ann {* ----------------  ---  --------  -------  -------  ---------  -------------------------- *}
+      Ann {* CK                 0      100ns       50       80         40  shift_clock master shift  *}
+      Ann {*  *}
+      Ann {* port_name         constraint_value *}
+      Ann {* ----------------  --------------- *}
+      Ann {* SE                  0 *}
+      Ann {* SI                  0 *}
+      Ann {*  *}
+      Ann {* There are no equivalent pins *}
+      Ann {* There are no net connections *}
+      Ann {* top_module_name = CUT *}
+      Ann {* Unified STIL Flow *}
+      Ann {* serial_flag = 0 *}
+      Ann {* PSDF = NO_PSD_FILE *}
+      Ann {* PSDS = 0 *}
+      Ann {* PSDA = #570#1#0/0 *}
+      Ann {* internal_clock = CK *}
+   }
+}
+Signals {
+   "GND" In; "VDD" In; "CK" In; "SE" In; "SI" In { ScanIn; } "g100" In; "g101" In;
+   "g102" In; "g103" In; "g104" In; "g109" In; "g1170" In; "g1173" In; "g1176" In;
+   "g1179" In; "g1182" In; "g1185" In; "g1188" In; "g1191" In; "g1194" In; "g1197" In;
+   "g1200" In; "g1203" In; "g1696" In; "g1700" In; "g1712" In; "g18" In; "g1960" In;
+   "g1961" In; "g23" In; "g27" In; "g28" In; "g29" In; "g30" In; "g31" In; "g41" In;
+   "g42" In; "g43" In; "g44" In; "g45" In; "g46" In; "g47" In; "g48" In; "g741" In;
+   "g742" In; "g743" In; "g744" In; "g750" In; "g82" In; "g83" In; "g84" In; "g85" In;
+   "g86" In; "g87" In; "g872" In; "g873" In; "g877" In; "g88" In; "g881" In; "g886" In;
+   "g889" In; "g89" In; "g892" In; "g895" In; "g898" In; "g90" In; "g901" In; "g904" In;
+   "g907" In; "g91" In; "g910" In; "g913" In; "g916" In; "g919" In; "g92" In; "g922" In;
+   "g925" In; "g93" In; "g94" In; "g95" In; "g96" In; "g99" In; "SO" Out { ScanOut;
+   } "g10377" Out; "g10379" Out; "g10455" Out; "g10457" Out; "g10459" Out; "g10461" Out;
+   "g10463" Out; "g10465" Out; "g10628" Out; "g10801" Out; "g11163" Out; "g11206" Out;
+   "g11489" Out; "g1957" Out; "g2355" Out; "g2601" Out; "g2602" Out; "g2603" Out;
+   "g2604" Out; "g2605" Out; "g2606" Out; "g2607" Out; "g2608" Out; "g2609" Out; "g2610" Out;
+   "g2611" Out; "g2612" Out; "g2648" Out; "g2986" Out; "g3007" Out; "g3069" Out; "g3327" Out;
+   "g4171" Out; "g4172" Out; "g4173" Out; "g4174" Out; "g4175" Out; "g4176" Out; "g4177" Out;
+   "g4178" Out; "g4179" Out; "g4180" Out; "g4181" Out; "g4191" Out; "g4192" Out; "g4193" Out;
+   "g4194" Out; "g4195" Out; "g4196" Out; "g4197" Out; "g4198" Out; "g4199" Out; "g4200" Out;
+   "g4201" Out; "g4202" Out; "g4203" Out; "g4204" Out; "g4205" Out; "g4206" Out; "g4207" Out;
+   "g4208" Out; "g4209" Out; "g4210" Out; "g4211" Out; "g4212" Out; "g4213" Out; "g4214" Out;
+   "g4215" Out; "g4216" Out; "g4887" Out; "g4888" Out; "g5101" Out; "g5105" Out; "g5658" Out;
+   "g5659" Out; "g5816" Out; "g6253" Out; "g6254" Out; "g6255" Out; "g6256" Out; "g6257" Out;
+   "g6258" Out; "g6259" Out; "g6260" Out; "g6261" Out; "g6262" Out; "g6263" Out; "g6264" Out;
+   "g6265" Out; "g6266" Out; "g6267" Out; "g6268" Out; "g6269" Out; "g6270" Out; "g6271" Out;
+   "g6272" Out; "g6273" Out; "g6274" Out; "g6275" Out; "g6276" Out; "g6277" Out; "g6278" Out;
+   "g6279" Out; "g6280" Out; "g6281" Out; "g6282" Out; "g6283" Out; "g6284" Out; "g6285" Out;
+   "g6842" Out; "g6920" Out; "g6926" Out; "g6932" Out; "g6942" Out; "g6949" Out; "g6955" Out;
+   "g7744" Out; "g8061" Out; "g8062" Out; "g8271" Out; "g8313" Out; "g8316" Out; "g8318" Out;
+   "g8323" Out; "g8328" Out; "g8331" Out; "g8335" Out; "g8340" Out; "g8347" Out; "g8349" Out;
+   "g8352" Out; "g8561" Out; "g8562" Out; "g8563" Out; "g8564" Out; "g8565" Out; "g8566" Out;
+   "g8976" Out; "g8977" Out; "g8978" Out; "g8979" Out; "g8980" Out; "g8981" Out; "g8982" Out;
+   "g8983" Out; "g8984" Out; "g8985" Out; "g8986" Out; "g9451" Out; "g9961" Out;
+}
+SignalGroups {
+   "_pi" = '"GND" + "VDD" + "CK" + "SE" + "SI" + "g100" + "g101" + "g102" + "g103"
+   + "g104" + "g109" + "g1170" + "g1173" + "g1176" + "g1179" + "g1182" + "g1185" + "g1188"
+   + "g1191" + "g1194" + "g1197" + "g1200" + "g1203" + "g1696" + "g1700" + "g1712"
+   + "g18" + "g1960" + "g1961" + "g23" + "g27" + "g28" + "g29" + "g30" + "g31" + "g41"
+   + "g42" + "g43" + "g44" + "g45" + "g46" + "g47" + "g48" + "g741" + "g742" + "g743"
+   + "g744" + "g750" + "g82" + "g83" + "g84" + "g85" + "g86" + "g87" + "g872" + "g873"
+   + "g877" + "g88" + "g881" + "g886" + "g889" + "g89" + "g892" + "g895" + "g898"
+   + "g90" + "g901" + "g904" + "g907" + "g91" + "g910" + "g913" + "g916" + "g919"
+   + "g92" + "g922" + "g925" + "g93" + "g94" + "g95" + "g96" + "g99"'; // #signals=82
+   "_in" = '"GND" + "VDD" + "CK" + "SE" + "SI" + "g100" + "g101" + "g102" + "g103"
+   + "g104" + "g109" + "g1170" + "g1173" + "g1176" + "g1179" + "g1182" + "g1185" + "g1188"
+   + "g1191" + "g1194" + "g1197" + "g1200" + "g1203" + "g1696" + "g1700" + "g1712"
+   + "g18" + "g1960" + "g1961" + "g23" + "g27" + "g28" + "g29" + "g30" + "g31" + "g41"
+   + "g42" + "g43" + "g44" + "g45" + "g46" + "g47" + "g48" + "g741" + "g742" + "g743"
+   + "g744" + "g750" + "g82" + "g83" + "g84" + "g85" + "g86" + "g87" + "g872" + "g873"
+   + "g877" + "g88" + "g881" + "g886" + "g889" + "g89" + "g892" + "g895" + "g898"
+   + "g90" + "g901" + "g904" + "g907" + "g91" + "g910" + "g913" + "g916" + "g919"
+   + "g92" + "g922" + "g925" + "g93" + "g94" + "g95" + "g96" + "g99"'; // #signals=82
+   "_so" = '"SO"' { ScanOut; } // #signals=1
+   "_po" = '"SO" + "g10377" + "g10379" + "g10455" + "g10457" + "g10459" + "g10461"
+   + "g10463" + "g10465" + "g10628" + "g10801" + "g11163" + "g11206" + "g11489" + "g1957"
+   + "g2355" + "g2601" + "g2602" + "g2603" + "g2604" + "g2605" + "g2606" + "g2607"
+   + "g2608" + "g2609" + "g2610" + "g2611" + "g2612" + "g2648" + "g2986" + "g3007"
+   + "g3069" + "g3327" + "g4171" + "g4172" + "g4173" + "g4174" + "g4175" + "g4176"
+   + "g4177" + "g4178" + "g4179" + "g4180" + "g4181" + "g4191" + "g4192" + "g4193"
+   + "g4194" + "g4195" + "g4196" + "g4197" + "g4198" + "g4199" + "g4200" + "g4201"
+   + "g4202" + "g4203" + "g4204" + "g4205" + "g4206" + "g4207" + "g4208" + "g4209"
+   + "g4210" + "g4211" + "g4212" + "g4213" + "g4214" + "g4215" + "g4216" + "g4887"
+   + "g4888" + "g5101" + "g5105" + "g5658" + "g5659" + "g5816" + "g6253" + "g6254"
+   + "g6255" + "g6256" + "g6257" + "g6258" + "g6259" + "g6260" + "g6261" + "g6262"
+   + "g6263" + "g6264" + "g6265" + "g6266" + "g6267" + "g6268" + "g6269" + "g6270"
+   + "g6271" + "g6272" + "g6273" + "g6274" + "g6275" + "g6276" + "g6277" + "g6278"
+   + "g6279" + "g6280" + "g6281" + "g6282" + "g6283" + "g6284" + "g6285" + "g6842"
+   + "g6920" + "g6926" + "g6932" + "g6942" + "g6949" + "g6955" + "g7744" + "g8061"
+   + "g8062" + "g8271" + "g8313" + "g8316" + "g8318" + "g8323" + "g8328" + "g8331"
+   + "g8335" + "g8340" + "g8347" + "g8349" + "g8352" + "g8561" + "g8562" + "g8563"
+   + "g8564" + "g8565" + "g8566" + "g8976" + "g8977" + "g8978" + "g8979" + "g8980"
+   + "g8981" + "g8982" + "g8983" + "g8984" + "g8985" + "g8986" + "g9451" + "g9961"';
+   // #signals=151
+   "_out" = '"SO" + "g10377" + "g10379" + "g10455" + "g10457" + "g10459" + "g10461"
+   + "g10463" + "g10465" + "g10628" + "g10801" + "g11163" + "g11206" + "g11489" + "g1957"
+   + "g2355" + "g2601" + "g2602" + "g2603" + "g2604" + "g2605" + "g2606" + "g2607"
+   + "g2608" + "g2609" + "g2610" + "g2611" + "g2612" + "g2648" + "g2986" + "g3007"
+   + "g3069" + "g3327" + "g4171" + "g4172" + "g4173" + "g4174" + "g4175" + "g4176"
+   + "g4177" + "g4178" + "g4179" + "g4180" + "g4181" + "g4191" + "g4192" + "g4193"
+   + "g4194" + "g4195" + "g4196" + "g4197" + "g4198" + "g4199" + "g4200" + "g4201"
+   + "g4202" + "g4203" + "g4204" + "g4205" + "g4206" + "g4207" + "g4208" + "g4209"
+   + "g4210" + "g4211" + "g4212" + "g4213" + "g4214" + "g4215" + "g4216" + "g4887"
+   + "g4888" + "g5101" + "g5105" + "g5658" + "g5659" + "g5816" + "g6253" + "g6254"
+   + "g6255" + "g6256" + "g6257" + "g6258" + "g6259" + "g6260" + "g6261" + "g6262"
+   + "g6263" + "g6264" + "g6265" + "g6266" + "g6267" + "g6268" + "g6269" + "g6270"
+   + "g6271" + "g6272" + "g6273" + "g6274" + "g6275" + "g6276" + "g6277" + "g6278"
+   + "g6279" + "g6280" + "g6281" + "g6282" + "g6283" + "g6284" + "g6285" + "g6842"
+   + "g6920" + "g6926" + "g6932" + "g6942" + "g6949" + "g6955" + "g7744" + "g8061"
+   + "g8062" + "g8271" + "g8313" + "g8316" + "g8318" + "g8323" + "g8328" + "g8331"
+   + "g8335" + "g8340" + "g8347" + "g8349" + "g8352" + "g8561" + "g8562" + "g8563"
+   + "g8564" + "g8565" + "g8566" + "g8976" + "g8977" + "g8978" + "g8979" + "g8980"
+   + "g8981" + "g8982" + "g8983" + "g8984" + "g8985" + "g8986" + "g9451" + "g9961"';
+   // #signals=151
+   "_default_In_Timing_" = '"GND" + "VDD" + "SE" + "SI" + "g100" + "g101" + "g102"
+   + "g103" + "g104" + "g109" + "g1170" + "g1173" + "g1176" + "g1179" + "g1182" + "g1185"
+   + "g1188" + "g1191" + "g1194" + "g1197" + "g1200" + "g1203" + "g1696" + "g1700"
+   + "g1712" + "g18" + "g1960" + "g1961" + "g23" + "g27" + "g28" + "g29" + "g30" + "g31"
+   + "g41" + "g42" + "g43" + "g44" + "g45" + "g46" + "g47" + "g48" + "g741" + "g742"
+   + "g743" + "g744" + "g750" + "g82" + "g83" + "g84" + "g85" + "g86" + "g87" + "g872"
+   + "g873" + "g877" + "g88" + "g881" + "g886" + "g889" + "g89" + "g892" + "g895"
+   + "g898" + "g90" + "g901" + "g904" + "g907" + "g91" + "g910" + "g913" + "g916"
+   + "g919" + "g92" + "g922" + "g925" + "g93" + "g94" + "g95" + "g96" + "g99"'; // #signals=81
+   "_default_Out_Timing_" = '"SO" + "g10377" + "g10379" + "g10455" + "g10457" + "g10459"
+   + "g10461" + "g10463" + "g10465" + "g10628" + "g10801" + "g11163" + "g11206" + "g11489"
+   + "g1957" + "g2355" + "g2601" + "g2602" + "g2603" + "g2604" + "g2605" + "g2606"
+   + "g2607" + "g2608" + "g2609" + "g2610" + "g2611" + "g2612" + "g2648" + "g2986"
+   + "g3007" + "g3069" + "g3327" + "g4171" + "g4172" + "g4173" + "g4174" + "g4175"
+   + "g4176" + "g4177" + "g4178" + "g4179" + "g4180" + "g4181" + "g4191" + "g4192"
+   + "g4193" + "g4194" + "g4195" + "g4196" + "g4197" + "g4198" + "g4199" + "g4200"
+   + "g4201" + "g4202" + "g4203" + "g4204" + "g4205" + "g4206" + "g4207" + "g4208"
+   + "g4209" + "g4210" + "g4211" + "g4212" + "g4213" + "g4214" + "g4215" + "g4216"
+   + "g4887" + "g4888" + "g5101" + "g5105" + "g5658" + "g5659" + "g5816" + "g6253"
+   + "g6254" + "g6255" + "g6256" + "g6257" + "g6258" + "g6259" + "g6260" + "g6261"
+   + "g6262" + "g6263" + "g6264" + "g6265" + "g6266" + "g6267" + "g6268" + "g6269"
+   + "g6270" + "g6271" + "g6272" + "g6273" + "g6274" + "g6275" + "g6276" + "g6277"
+   + "g6278" + "g6279" + "g6280" + "g6281" + "g6282" + "g6283" + "g6284" + "g6285"
+   + "g6842" + "g6920" + "g6926" + "g6932" + "g6942" + "g6949" + "g6955" + "g7744"
+   + "g8061" + "g8062" + "g8271" + "g8313" + "g8316" + "g8318" + "g8323" + "g8328"
+   + "g8331" + "g8335" + "g8340" + "g8347" + "g8349" + "g8352" + "g8561" + "g8562"
+   + "g8563" + "g8564" + "g8565" + "g8566" + "g8976" + "g8977" + "g8978" + "g8979"
+   + "g8980" + "g8981" + "g8982" + "g8983" + "g8984" + "g8985" + "g8986" + "g9451"
+   + "g9961"'; // #signals=151
+   "_si" = '"SI"' { ScanIn; } // #signals=1
+}
+Timing {
+   WaveformTable "_default_WFT_" {
+      Period '100ns';
+      Waveforms {
+         "CK" { 0 { '0ns' D; } }
+         "CK" { P { '0ns' D; '50ns' U; '80ns' D; } }
+         "CK" { 1 { '0ns' U; } }
+         "CK" { Z { '0ns' Z; } }
+         "_default_In_Timing_" { 0 { '0ns' D; } }
+         "_default_In_Timing_" { 1 { '0ns' U; } }
+         "_default_In_Timing_" { Z { '0ns' Z; } }
+         "_default_In_Timing_" { N { '0ns' N; } }
+         "_default_Out_Timing_" { X { '0ns' X; } }
+         "_default_Out_Timing_" { H { '0ns' X; '40ns' H; } }
+         "_default_Out_Timing_" { T { '0ns' X; '40ns' T; } }
+         "_default_Out_Timing_" { L { '0ns' X; '40ns' L; } }
+      }
+   }
+}
+ScanStructures {
+   ScanChain "chain1" {
+      ScanLength 534;
+      ScanIn "SI";
+      ScanOut "SO";
+      ScanInversion 0;
+      ScanCells "CUT.S_DFF_17.SI" "CUT.S_DFF_18.SI" "CUT.S_DFF_19.SI" "CUT.S_DFF_20.SI" 
+      "CUT.S_DFF_21.SI" "CUT.S_DFF_22.SI" "CUT.S_DFF_23.SI" "CUT.S_DFF_24.SI" "CUT.S_DFF_25.SI" 
+      "CUT.S_DFF_26.SI" "CUT.S_DFF_27.SI" "CUT.S_DFF_28.SI" "CUT.S_DFF_29.SI" "CUT.S_DFF_30.SI" 
+      "CUT.S_DFF_31.SI" "CUT.S_DFF_32.SI" "CUT.S_DFF_33.SI" "CUT.S_DFF_51.SI" "CUT.S_DFF_52.SI" 
+      "CUT.S_DFF_53.SI" "CUT.S_DFF_54.SI" "CUT.S_DFF_55.SI" "CUT.S_DFF_56.SI" "CUT.S_DFF_57.SI" 
+      "CUT.S_DFF_58.SI" "CUT.S_DFF_59.SI" "CUT.S_DFF_60.SI" "CUT.S_DFF_61.SI" "CUT.S_DFF_62.SI" 
+      "CUT.S_DFF_63.SI" "CUT.S_DFF_64.SI" "CUT.S_DFF_65.SI" "CUT.S_DFF_66.SI" "CUT.S_DFF_67.SI" 
+      "CUT.S_DFF_68.SI" "CUT.S_DFF_69.SI" "CUT.S_DFF_70.SI" "CUT.S_DFF_71.SI" "CUT.S_DFF_72.SI" 
+      "CUT.S_DFF_73.SI" "CUT.S_DFF_74.SI" "CUT.S_DFF_75.SI" "CUT.S_DFF_76.SI" "CUT.S_DFF_77.SI" 
+      "CUT.S_DFF_78.SI" "CUT.S_DFF_79.SI" "CUT.S_DFF_80.SI" "CUT.S_DFF_81.SI" "CUT.S_DFF_93.SI" 
+      "CUT.S_DFF_94.SI" "CUT.S_DFF_95.SI" "CUT.S_DFF_96.SI" "CUT.S_DFF_97.SI" "CUT.S_DFF_98.SI" 
+      "CUT.S_DFF_99.SI" "CUT.S_DFF_100.SI" "CUT.S_DFF_101.SI" "CUT.S_DFF_102.SI" "CUT.S_DFF_103.SI" 
+      "CUT.S_DFF_104.SI" "CUT.S_DFF_105.SI" "CUT.S_DFF_106.SI" "CUT.S_DFF_107.SI" 
+      "CUT.S_DFF_108.SI" "CUT.S_DFF_109.SI" "CUT.S_DFF_110.SI" "CUT.S_DFF_111.SI" 
+      "CUT.S_DFF_112.SI" "CUT.S_DFF_113.SI" "CUT.S_DFF_114.SI" "CUT.S_DFF_115.SI" 
+      "CUT.S_DFF_116.SI" "CUT.S_DFF_117.SI" "CUT.S_DFF_118.SI" "CUT.S_DFF_119.SI" 
+      "CUT.S_DFF_120.SI" "CUT.S_DFF_121.SI" "CUT.S_DFF_122.SI" "CUT.S_DFF_123.SI" 
+      "CUT.S_DFF_124.SI" "CUT.S_DFF_125.SI" "CUT.S_DFF_126.SI" "CUT.S_DFF_127.SI" 
+      "CUT.S_DFF_128.SI" "CUT.S_DFF_129.SI" "CUT.S_DFF_130.SI" "CUT.S_DFF_131.SI" 
+      "CUT.S_DFF_132.SI" "CUT.S_DFF_133.SI" "CUT.S_DFF_134.SI" "CUT.S_DFF_135.SI" 
+      "CUT.S_DFF_136.SI" "CUT.S_DFF_137.SI" "CUT.S_DFF_138.SI" "CUT.S_DFF_139.SI" 
+      "CUT.S_DFF_140.SI" "CUT.S_DFF_141.SI" "CUT.S_DFF_142.SI" "CUT.S_DFF_143.SI" 
+      "CUT.S_DFF_144.SI" "CUT.S_DFF_145.SI" "CUT.S_DFF_146.SI" "CUT.S_DFF_147.SI" 
+      "CUT.S_DFF_148.SI" "CUT.S_DFF_149.SI" "CUT.S_DFF_150.SI" "CUT.S_DFF_151.SI" 
+      "CUT.S_DFF_152.SI" "CUT.S_DFF_153.SI" "CUT.S_DFF_154.SI" "CUT.S_DFF_155.SI" 
+      "CUT.S_DFF_156.SI" "CUT.S_DFF_157.SI" "CUT.S_DFF_158.SI" "CUT.S_DFF_159.SI" 
+      "CUT.S_DFF_160.SI" "CUT.S_DFF_161.SI" "CUT.S_DFF_162.SI" "CUT.S_DFF_163.SI" 
+      "CUT.S_DFF_164.SI" "CUT.S_DFF_165.SI" "CUT.S_DFF_166.SI" "CUT.S_DFF_167.SI" 
+      "CUT.S_DFF_168.SI" "CUT.S_DFF_169.SI" "CUT.S_DFF_170.SI" "CUT.S_DFF_171.SI" 
+      "CUT.S_DFF_172.SI" "CUT.S_DFF_173.SI" "CUT.S_DFF_174.SI" "CUT.S_DFF_175.SI" 
+      "CUT.S_DFF_176.SI" "CUT.S_DFF_177.SI" "CUT.S_DFF_178.SI" "CUT.S_DFF_179.SI" 
+      "CUT.S_DFF_180.SI" "CUT.S_DFF_181.SI" "CUT.S_DFF_182.SI" "CUT.S_DFF_183.SI" 
+      "CUT.S_DFF_184.SI" "CUT.S_DFF_185.SI" "CUT.S_DFF_186.SI" "CUT.S_DFF_187.SI" 
+      "CUT.S_DFF_188.SI" "CUT.S_DFF_189.SI" "CUT.S_DFF_190.SI" "CUT.S_DFF_191.SI" 
+      "CUT.S_DFF_192.SI" "CUT.S_DFF_193.SI" "CUT.S_DFF_194.SI" "CUT.S_DFF_195.SI" 
+      "CUT.S_DFF_196.SI" "CUT.S_DFF_197.SI" "CUT.S_DFF_198.SI" "CUT.S_DFF_199.SI" 
+      "CUT.S_DFF_200.SI" "CUT.S_DFF_201.SI" "CUT.S_DFF_202.SI" "CUT.S_DFF_203.SI" 
+      "CUT.S_DFF_204.SI" "CUT.S_DFF_205.SI" "CUT.S_DFF_206.SI" "CUT.S_DFF_207.SI" 
+      "CUT.S_DFF_208.SI" "CUT.S_DFF_209.SI" "CUT.S_DFF_210.SI" "CUT.S_DFF_211.SI" 
+      "CUT.S_DFF_212.SI" "CUT.S_DFF_213.SI" "CUT.S_DFF_214.SI" "CUT.S_DFF_215.SI" 
+      "CUT.S_DFF_216.SI" "CUT.S_DFF_217.SI" "CUT.S_DFF_218.SI" "CUT.S_DFF_219.SI" 
+      "CUT.S_DFF_220.SI" "CUT.S_DFF_221.SI" "CUT.S_DFF_222.SI" "CUT.S_DFF_223.SI" 
+      "CUT.S_DFF_224.SI" "CUT.S_DFF_225.SI" "CUT.S_DFF_226.SI" "CUT.S_DFF_227.SI" 
+      "CUT.S_DFF_228.SI" "CUT.S_DFF_229.SI" "CUT.S_DFF_230.SI" "CUT.S_DFF_231.SI" 
+      "CUT.S_DFF_232.SI" "CUT.S_DFF_233.SI" "CUT.S_DFF_234.SI" "CUT.S_DFF_235.SI" 
+      "CUT.S_DFF_236.SI" "CUT.S_DFF_237.SI" "CUT.S_DFF_238.SI" "CUT.S_DFF_239.SI" 
+      "CUT.S_DFF_240.SI" "CUT.S_DFF_241.SI" "CUT.S_DFF_242.SI" "CUT.S_DFF_243.SI" 
+      "CUT.S_DFF_244.SI" "CUT.S_DFF_245.SI" "CUT.S_DFF_246.SI" "CUT.S_DFF_247.SI" 
+      "CUT.S_DFF_248.SI" "CUT.S_DFF_249.SI" "CUT.S_DFF_250.SI" "CUT.S_DFF_251.SI" 
+      "CUT.S_DFF_252.SI" "CUT.S_DFF_253.SI" "CUT.S_DFF_254.SI" "CUT.S_DFF_255.SI" 
+      "CUT.S_DFF_256.SI" "CUT.S_DFF_257.SI" "CUT.S_DFF_258.SI" "CUT.S_DFF_259.SI" 
+      "CUT.S_DFF_260.SI" "CUT.S_DFF_261.SI" "CUT.S_DFF_262.SI" "CUT.S_DFF_263.SI" 
+      "CUT.S_DFF_264.SI" "CUT.S_DFF_265.SI" "CUT.S_DFF_266.SI" "CUT.S_DFF_267.SI" 
+      "CUT.S_DFF_268.SI" "CUT.S_DFF_269.SI" "CUT.S_DFF_270.SI" "CUT.S_DFF_271.SI" 
+      "CUT.S_DFF_272.SI" "CUT.S_DFF_273.SI" "CUT.S_DFF_274.SI" "CUT.S_DFF_275.SI" 
+      "CUT.S_DFF_276.SI" "CUT.S_DFF_277.SI" "CUT.S_DFF_278.SI" "CUT.S_DFF_279.SI" 
+      "CUT.S_DFF_280.SI" "CUT.S_DFF_281.SI" "CUT.S_DFF_282.SI" "CUT.S_DFF_283.SI" 
+      "CUT.S_DFF_284.SI" "CUT.S_DFF_285.SI" "CUT.S_DFF_286.SI" "CUT.S_DFF_287.SI" 
+      "CUT.S_DFF_288.SI" "CUT.S_DFF_289.SI" "CUT.S_DFF_290.SI" "CUT.S_DFF_291.SI" 
+      "CUT.S_DFF_292.SI" "CUT.S_DFF_293.SI" "CUT.S_DFF_294.SI" "CUT.S_DFF_295.SI" 
+      "CUT.S_DFF_296.SI" "CUT.S_DFF_297.SI" "CUT.S_DFF_298.SI" "CUT.S_DFF_299.SI" 
+      "CUT.S_DFF_300.SI" "CUT.S_DFF_301.SI" "CUT.S_DFF_302.SI" "CUT.S_DFF_303.SI" 
+      "CUT.S_DFF_304.SI" "CUT.S_DFF_305.SI" "CUT.S_DFF_306.SI" "CUT.S_DFF_307.SI" 
+      "CUT.S_DFF_308.SI" "CUT.S_DFF_309.SI" "CUT.S_DFF_310.SI" "CUT.S_DFF_311.SI" 
+      "CUT.S_DFF_312.SI" "CUT.S_DFF_313.SI" "CUT.S_DFF_314.SI" "CUT.S_DFF_315.SI" 
+      "CUT.S_DFF_316.SI" "CUT.S_DFF_317.SI" "CUT.S_DFF_318.SI" "CUT.S_DFF_319.SI" 
+      "CUT.S_DFF_320.SI" "CUT.S_DFF_321.SI" "CUT.S_DFF_322.SI" "CUT.S_DFF_323.SI" 
+      "CUT.S_DFF_324.SI" "CUT.S_DFF_325.SI" "CUT.S_DFF_326.SI" "CUT.S_DFF_327.SI" 
+      "CUT.S_DFF_328.SI" "CUT.S_DFF_329.SI" "CUT.S_DFF_330.SI" "CUT.S_DFF_331.SI" 
+      "CUT.S_DFF_332.SI" "CUT.S_DFF_333.SI" "CUT.S_DFF_334.SI" "CUT.S_DFF_335.SI" 
+      "CUT.S_DFF_336.SI" "CUT.S_DFF_337.SI" "CUT.S_DFF_338.SI" "CUT.S_DFF_339.SI" 
+      "CUT.S_DFF_340.SI" "CUT.S_DFF_341.SI" "CUT.S_DFF_342.SI" "CUT.S_DFF_343.SI" 
+      "CUT.S_DFF_344.SI" "CUT.S_DFF_345.SI" "CUT.S_DFF_346.SI" "CUT.S_DFF_347.SI" 
+      "CUT.S_DFF_348.SI" "CUT.S_DFF_349.SI" "CUT.S_DFF_350.SI" "CUT.S_DFF_351.SI" 
+      "CUT.S_DFF_352.SI" "CUT.S_DFF_353.SI" "CUT.S_DFF_354.SI" "CUT.S_DFF_355.SI" 
+      "CUT.S_DFF_356.SI" "CUT.S_DFF_357.SI" "CUT.S_DFF_358.SI" "CUT.S_DFF_359.SI" 
+      "CUT.S_DFF_360.SI" "CUT.S_DFF_361.SI" "CUT.S_DFF_362.SI" "CUT.S_DFF_363.SI" 
+      "CUT.S_DFF_364.SI" "CUT.S_DFF_365.SI" "CUT.S_DFF_366.SI" "CUT.S_DFF_367.SI" 
+      "CUT.S_DFF_368.SI" "CUT.S_DFF_369.SI" "CUT.S_DFF_370.SI" "CUT.S_DFF_371.SI" 
+      "CUT.S_DFF_372.SI" "CUT.S_DFF_373.SI" "CUT.S_DFF_374.SI" "CUT.S_DFF_375.SI" 
+      "CUT.S_DFF_376.SI" "CUT.S_DFF_377.SI" "CUT.S_DFF_378.SI" "CUT.S_DFF_379.SI" 
+      "CUT.S_DFF_380.SI" "CUT.S_DFF_381.SI" "CUT.S_DFF_382.SI" "CUT.S_DFF_383.SI" 
+      "CUT.S_DFF_384.SI" "CUT.S_DFF_385.SI" "CUT.S_DFF_386.SI" "CUT.S_DFF_387.SI" 
+      "CUT.S_DFF_388.SI" "CUT.S_DFF_389.SI" "CUT.S_DFF_390.SI" "CUT.S_DFF_391.SI" 
+      "CUT.S_DFF_392.SI" "CUT.S_DFF_393.SI" "CUT.S_DFF_394.SI" "CUT.S_DFF_395.SI" 
+      "CUT.S_DFF_396.SI" "CUT.S_DFF_397.SI" "CUT.S_DFF_398.SI" "CUT.S_DFF_399.SI" 
+      "CUT.S_DFF_400.SI" "CUT.S_DFF_401.SI" "CUT.S_DFF_402.SI" "CUT.S_DFF_403.SI" 
+      "CUT.S_DFF_404.SI" "CUT.S_DFF_405.SI" "CUT.S_DFF_406.SI" "CUT.S_DFF_407.SI" 
+      "CUT.S_DFF_408.SI" "CUT.S_DFF_409.SI" "CUT.S_DFF_410.SI" "CUT.S_DFF_411.SI" 
+      "CUT.S_DFF_412.SI" "CUT.S_DFF_413.SI" "CUT.S_DFF_414.SI" "CUT.S_DFF_415.SI" 
+      "CUT.S_DFF_416.SI" "CUT.S_DFF_417.SI" "CUT.S_DFF_418.SI" "CUT.S_DFF_419.SI" 
+      "CUT.S_DFF_420.SI" "CUT.S_DFF_421.SI" "CUT.S_DFF_422.SI" "CUT.S_DFF_423.SI" 
+      "CUT.S_DFF_424.SI" "CUT.S_DFF_425.SI" "CUT.S_DFF_426.SI" "CUT.S_DFF_427.SI" 
+      "CUT.S_DFF_428.SI" "CUT.S_DFF_429.SI" "CUT.S_DFF_430.SI" "CUT.S_DFF_431.SI" 
+      "CUT.S_DFF_432.SI" "CUT.S_DFF_433.SI" "CUT.S_DFF_434.SI" "CUT.S_DFF_435.SI" 
+      "CUT.S_DFF_436.SI" "CUT.S_DFF_437.SI" "CUT.S_DFF_438.SI" "CUT.S_DFF_439.SI" 
+      "CUT.S_DFF_440.SI" "CUT.S_DFF_441.SI" "CUT.S_DFF_442.SI" "CUT.S_DFF_443.SI" 
+      "CUT.S_DFF_444.SI" "CUT.S_DFF_445.SI" "CUT.S_DFF_446.SI" "CUT.S_DFF_447.SI" 
+      "CUT.S_DFF_448.SI" "CUT.S_DFF_449.SI" "CUT.S_DFF_450.SI" "CUT.S_DFF_451.SI" 
+      "CUT.S_DFF_452.SI" "CUT.S_DFF_453.SI" "CUT.S_DFF_454.SI" "CUT.S_DFF_455.SI" 
+      "CUT.S_DFF_456.SI" "CUT.S_DFF_457.SI" "CUT.S_DFF_458.SI" "CUT.S_DFF_459.SI" 
+      "CUT.S_DFF_460.SI" "CUT.S_DFF_461.SI" "CUT.S_DFF_462.SI" "CUT.S_DFF_463.SI" 
+      "CUT.S_DFF_464.SI" "CUT.S_DFF_465.SI" "CUT.S_DFF_466.SI" "CUT.S_DFF_467.SI" 
+      "CUT.S_DFF_468.SI" "CUT.S_DFF_469.SI" "CUT.S_DFF_470.SI" "CUT.S_DFF_471.SI" 
+      "CUT.S_DFF_472.SI" "CUT.S_DFF_473.SI" "CUT.S_DFF_474.SI" "CUT.S_DFF_475.SI" 
+      "CUT.S_DFF_476.SI" "CUT.S_DFF_477.SI" "CUT.S_DFF_478.SI" "CUT.S_DFF_479.SI" 
+      "CUT.S_DFF_480.SI" "CUT.S_DFF_481.SI" "CUT.S_DFF_482.SI" "CUT.S_DFF_483.SI" 
+      "CUT.S_DFF_484.SI" "CUT.S_DFF_485.SI" "CUT.S_DFF_486.SI" "CUT.S_DFF_487.SI" 
+      "CUT.S_DFF_488.SI" "CUT.S_DFF_489.SI" "CUT.S_DFF_490.SI" "CUT.S_DFF_491.SI" 
+      "CUT.S_DFF_492.SI" "CUT.S_DFF_493.SI" "CUT.S_DFF_494.SI" "CUT.S_DFF_495.SI" 
+      "CUT.S_DFF_496.SI" "CUT.S_DFF_497.SI" "CUT.S_DFF_498.SI" "CUT.S_DFF_499.SI" 
+      "CUT.S_DFF_500.SI" "CUT.S_DFF_501.SI" "CUT.S_DFF_502.SI" "CUT.S_DFF_503.SI" 
+      "CUT.S_DFF_504.SI" "CUT.S_DFF_505.SI" "CUT.S_DFF_506.SI" "CUT.S_DFF_507.SI" 
+      "CUT.S_DFF_508.SI" "CUT.S_DFF_509.SI" "CUT.S_DFF_510.SI" "CUT.S_DFF_511.SI" 
+      "CUT.S_DFF_512.SI" "CUT.S_DFF_513.SI" "CUT.S_DFF_514.SI" "CUT.S_DFF_515.SI" 
+      "CUT.S_DFF_516.SI" "CUT.S_DFF_517.SI" "CUT.S_DFF_518.SI" "CUT.S_DFF_519.SI" 
+      "CUT.S_DFF_520.SI" "CUT.S_DFF_521.SI" "CUT.S_DFF_522.SI" "CUT.S_DFF_523.SI" 
+      "CUT.S_DFF_524.SI" "CUT.S_DFF_525.SI" "CUT.S_DFF_526.SI" "CUT.S_DFF_527.SI" 
+      "CUT.S_DFF_528.SI" "CUT.S_DFF_529.SI" "CUT.S_DFF_530.SI" "CUT.S_DFF_531.SI" 
+      "CUT.S_DFF_532.SI" "CUT.S_DFF_533.SI" "CUT.S_DFF_0.SI" "CUT.S_DFF_1.SI" "CUT.S_DFF_2.SI" 
+      "CUT.S_DFF_3.SI" "CUT.S_DFF_4.SI" "CUT.S_DFF_5.SI" "CUT.S_DFF_6.SI" "CUT.S_DFF_7.SI" 
+      "CUT.S_DFF_8.SI" "CUT.S_DFF_9.SI" "CUT.S_DFF_10.SI" "CUT.S_DFF_11.SI" "CUT.S_DFF_12.SI" 
+      "CUT.S_DFF_13.SI" "CUT.S_DFF_14.SI" "CUT.S_DFF_15.SI" "CUT.S_DFF_16.SI" "CUT.S_DFF_82.SI" 
+      "CUT.S_DFF_83.SI" "CUT.S_DFF_84.SI" "CUT.S_DFF_85.SI" "CUT.S_DFF_86.SI" "CUT.S_DFF_87.SI" 
+      "CUT.S_DFF_88.SI" "CUT.S_DFF_89.SI" "CUT.S_DFF_90.SI" "CUT.S_DFF_91.SI" "CUT.S_DFF_92.SI" 
+      "CUT.S_DFF_34.SI" "CUT.S_DFF_35.SI" "CUT.S_DFF_36.SI" "CUT.S_DFF_37.SI" "CUT.S_DFF_38.SI" 
+      "CUT.S_DFF_39.SI" "CUT.S_DFF_40.SI" "CUT.S_DFF_41.SI" "CUT.S_DFF_42.SI" "CUT.S_DFF_43.SI" 
+      "CUT.S_DFF_44.SI" "CUT.S_DFF_45.SI" "CUT.S_DFF_46.SI" "CUT.S_DFF_47.SI" "CUT.S_DFF_48.SI" 
+      "CUT.S_DFF_49.SI" "CUT.S_DFF_50.SI" ;
+      ScanMasterClock "CK" ;
+   }
+}
+PatternBurst "_burst_" {
+   PatList { "_pattern_" {
+   }
+}}
+PatternExec {
+   PatternBurst "_burst_";
+}
+Procedures {
+   "load_unload" {
+      W "_default_WFT_";
+      C { "SO"=X; "CK"=0; "SE"=1; "SI"=0; }
+      Shift {          W "_default_WFT_";
+         V { "_si"=#; "_so"=#; "CK"=P; }
+      }
+   }
+   "capture_CK" {
+      W "_default_WFT_";
+      C { "_po"=\r151 X ; }
+      F { "SE"=0; "SI"=0; }
+      "forcePI": V { "_pi"=\r82 # ; }
+      "measurePO": V { "_po"=\r151 # ; }
+      C { "_po"=\r151 X ; }
+      "pulse": V { "CK"=P; }
+   }
+   "capture" {
+      W "_default_WFT_";
+      C { "_po"=\r151 X ; }
+      F { "SE"=0; "SI"=0; }
+      "forcePI": V { "_pi"=\r82 # ; }
+      "measurePO": V { "_po"=\r151 # ; }
+   }
+}
+MacroDefs {
+   "test_setup" {
+      W "_default_WFT_";
+      V { "SE"=0; "SI"=0; "CK"=0; }
+   }
+}
+Pattern "_pattern_" {
+   W "_default_WFT_";
+   "precondition all Signals": C { "_pi"=\r82 0 ; 
+      "_po"=\r151 X ; }
+   Ann {* chain_test *}
+   "pattern 0": Call "load_unload" { 
+      "SI"=001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100; }
+   Call "capture" { 
+      "_pi"=1000010111000001110111011001000100101000010011100110011100001010011101001100010001; 
+      "_po"=LHHHHHHHHHHLHLHLLLLHLLHHHHLHLHHHHHHHHLLLHLLLLHHLLLHHLLLHHLLHHLLLLHHHLHLHHHLLHLLHLHLLLLHLLHHLLHLLHHLHLLLHHLHHHHLLHLLHLLHHHLLHHLHHLHLHLHLLHLHLLHHLHHLLHHH; }
+ 
