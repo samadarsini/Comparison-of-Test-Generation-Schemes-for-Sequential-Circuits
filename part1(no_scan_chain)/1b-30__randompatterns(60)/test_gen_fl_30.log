@@ -1,0 +1,73 @@
+ Begin reading netlist ( ./mylib.v )...
+ End parsing Verilog file ./mylib.v with 0 errors.
+ End reading netlist: #modules=46, top=udp_rslat, #lines=1689, CPU_time=0.00 sec, Memory=0MB
+ Begin reading netlist ( ./circuit.v )...
+ Error: Line of length 63843 exceeds current limit of 50000. (M18)
+ End parsing Verilog file ./circuit.v with 0 errors.
+ End reading netlist: #modules=1, top=CUT, #lines=0, CPU_time=0.01 sec, Memory=4MB
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = CUT ...
+ ------------------------------------------------------------------------------
+ There were 4235 primitives and 947 faultable pins removed during model optimizations
+ Warning: Rule B8 (unconnected module input pin) was violated 2 times.
+ Warning: Rule B9 (undriven module internal net) was violated 1 times.
+ Warning: Rule N23 (inconsistent UDP) was violated 1 times.
+ End build model: #primitives=11062, CPU_time=0.01 sec, Memory=5MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.03 sec.
+ ------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Clock rules checking completed, CPU time=0.00 sec.
+ Performing clock grouping analysis for 1 clock.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=527  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan behavior:  #LE=527
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=29(10873), observe=7(882), detect=31(3984), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ No violations occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ 0 faults were removed from the fault list.
+ End parsing STIL file ./ATPG_pattern_fs_30.pattern with 0 errors.
+ End reading 60 patterns, CPU_time = 0.00 sec, Memory = 0MB
+ 51372 faults were added to fault list.
+ Simulation performed for 9995 faults on circuit size of 11062 gates.
+ --------------------------------------------
+ #patterns     #faults     test      process
+ simulated  detect/active  coverage  CPU time
+ ---------  -------------  --------  --------
+ 32           5149   4846    10.37%      0.00
+ 60             63   4783    10.48%      0.00
+ Fault simulation completed: #patterns=60, CPU time=0.00
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       5212
+ Possibly detected                PT        209
+ Undetectable                     UD        664
+ ATPG untestable                  AU      40713
+ Not detected                     ND       4574
+ -----------------------------------------------
+ total faults                             51372
+ test coverage                            10.48%
+ -----------------------------------------------
+ Write faults completed: 4574 faults were written into file "./faults_left_fl_30.left".
