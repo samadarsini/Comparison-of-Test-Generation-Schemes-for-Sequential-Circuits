@@ -1,0 +1,137 @@
+ Begin reading netlist ( ./mylib.v )...
+ End parsing Verilog file ./mylib.v with 0 errors.
+ End reading netlist: #modules=46, top=udp_rslat, #lines=1689, CPU_time=0.00 sec, Memory=0MB
+ Begin reading netlist ( ./circuit_sff.v )...
+ Error: Line of length 63843 exceeds current limit of 50000. (M18)
+ End parsing Verilog file ./circuit_sff.v with 0 errors.
+ End reading netlist: #modules=1, top=CUT, #lines=0, CPU_time=0.01 sec, Memory=4MB
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = CUT ...
+ ------------------------------------------------------------------------------
+ There were 4382 primitives and 534 faultable pins removed during model optimizations
+ Warning: Rule B8 (unconnected module input pin) was violated 2 times.
+ Warning: Rule B9 (undriven module internal net) was violated 1 times.
+ Warning: Rule N23 (inconsistent UDP) was violated 1 times.
+ End build model: #primitives=12550, CPU_time=0.01 sec, Memory=5MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.02 sec.
+ ------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Chain chain1 successfully traced with 54 scan_cells.
+ Chain chain2 successfully traced with 54 scan_cells.
+ Chain chain3 successfully traced with 54 scan_cells.
+ Chain chain4 successfully traced with 54 scan_cells.
+ Chain chain5 successfully traced with 53 scan_cells.
+ Chain chain6 successfully traced with 53 scan_cells.
+ Chain chain7 successfully traced with 53 scan_cells.
+ Chain chain8 successfully traced with 53 scan_cells.
+ Chain chain9 successfully traced with 53 scan_cells.
+ Chain chain10 successfully traced with 53 scan_cells.
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Clock rules checking completed, CPU time=0.00 sec.
+ Performing clock grouping analysis for 1 clock.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=0  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ No violations occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ 0 faults were removed from the fault list.
+ 54416 faults were added to fault list.
+ ***********************************************************
+ *  NOTICE:  The following DRC violations were previously  *
+ *  encountered. The presence of these violations is an    *
+ *  indicator that it is possible that the ATPG patterns   *
+ *  created during this process may fail in simulation.    *
+ *                                                         *
+ *  Rules:  N23                                            *
+ ***********************************************************
+ ATPG performed for stuck fault model using internal pattern source.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #uncollapsed_faults=50462, abort_limit=10...
+ 29          38370  12092         0/0/0    77.72%      0.01
+ 61           3783   8302         3/0/0    84.70%      0.01
+ 93           1992   6299         9/0/0    88.39%      0.01
+ 124          1137   5149        17/0/0    90.51%      0.02
+ 156           770   4349        31/0/0    91.98%      0.02
+ 187           609   3726        40/0/0    93.13%      0.02
+ 217           372   3312        54/0/0    93.89%      0.02
+ 249           399   2805        85/0/0    94.81%      0.03
+ 276           240   2526       104/0/0    95.32%      0.03
+ 306           168   2327       116/0/1    95.69%      0.03
+ 337           230   2069       129/0/1    96.17%      0.04
+ 366           173   1867       143/0/1    96.54%      0.04
+ 394           279   1527       166/0/2    97.17%      0.04
+ 422           147   1295       198/0/2    97.59%      0.05
+ 450           173    949       258/0/2    98.23%      0.05
+ 480           109    790       282/0/2    98.53%      0.05
+ 511           161    506       312/0/2    99.05%      0.06
+ 540            95    307       352/0/2    99.42%      0.06
+ 572           148     68       391/0/2    99.87%      0.07
+ 576            46      2       401/0/2   100.00%      0.07
+ 
+ ------------------------------------------------------------
+ Begin Full-Sequential ATPG for 2 uncollapsed faults ...
+  --- abort limit : 10 seconds, NO BACKTRACK LIMIT
+ ------------------------------------------------------------
+ #patterns  #faults        #ATPG faults  test       process  
+ stored     detect/active  red/au/abort  coverage   CPU time 
+ ---------  -------------  ------------  --------  ----------
+ 576               0      0         0/2/0    100.00%         0.06
+ 
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT      53222
+ Possibly detected                PT          0
+ Undetectable                     UD       1192
+ ATPG untestable                  AU          2
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             54416
+ test coverage                           100.00%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                         576
+     #basic_scan patterns                   576
+ -----------------------------------------------
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT      53222
+ Possibly detected                PT          0
+ Undetectable                     UD       1192
+ ATPG untestable                  AU          2
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             54416
+ test coverage                           100.00%
+ -----------------------------------------------
+ Patterns written reference 2302 V statements, generating 32883 test cycles
+ End writing file 'ATPG_pattern_3a.pattern' with 576 patterns, File_size = 989098, CPU_time = 0.0 sec.
+ Write faults completed: 54416 faults were written into file "faults_list_3a".
+ Write faults completed: 0 faults were written into file "faults_3a_left".

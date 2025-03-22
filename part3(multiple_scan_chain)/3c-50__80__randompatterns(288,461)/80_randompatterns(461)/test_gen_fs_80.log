@@ -1,0 +1,63 @@
+ Begin reading netlist ( ./mylib.v )...
+ End parsing Verilog file ./mylib.v with 0 errors.
+ End reading netlist: #modules=46, top=udp_rslat, #lines=1689, CPU_time=0.00 sec, Memory=0MB
+ Begin reading netlist ( ./circuit_sff.v )...
+ Error: Line of length 63843 exceeds current limit of 50000. (M18)
+ End parsing Verilog file ./circuit_sff.v with 0 errors.
+ End reading netlist: #modules=1, top=CUT, #lines=0, CPU_time=0.01 sec, Memory=4MB
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = CUT ...
+ ------------------------------------------------------------------------------
+ There were 4382 primitives and 534 faultable pins removed during model optimizations
+ Warning: Rule B8 (unconnected module input pin) was violated 2 times.
+ Warning: Rule B9 (undriven module internal net) was violated 1 times.
+ Warning: Rule N23 (inconsistent UDP) was violated 1 times.
+ End build model: #primitives=12550, CPU_time=0.01 sec, Memory=5MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.02 sec.
+ ------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Chain chain1 successfully traced with 54 scan_cells.
+ Chain chain2 successfully traced with 54 scan_cells.
+ Chain chain3 successfully traced with 54 scan_cells.
+ Chain chain4 successfully traced with 54 scan_cells.
+ Chain chain5 successfully traced with 53 scan_cells.
+ Chain chain6 successfully traced with 53 scan_cells.
+ Chain chain7 successfully traced with 53 scan_cells.
+ Chain chain8 successfully traced with 53 scan_cells.
+ Chain chain9 successfully traced with 53 scan_cells.
+ Chain chain10 successfully traced with 53 scan_cells.
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Clock rules checking completed, CPU time=0.00 sec.
+ Performing clock grouping analysis for 1 clock.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=0  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=0(0), observe=0(0), detect=0(0), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ No violations occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ 0 faults were removed from the fault list.
+ End parsing STIL file ./random_pattern_80.pattern with 0 errors.
+ End reading 462 patterns, CPU_time = 0.04 sec, Memory = 0MB
+ Begin PROOFS simulation of 462 external patterns
+ Simulation completed: #patterns = 462/1600, #fail_pats = 0(0), #failing_meas = 0(0), CPU time = 0.24
+ Patterns written reference 1848 V statements, generating 26387 test cycles
+ End writing file 'ATPG_pattern_fs_80.pattern' with 462 patterns, File_size = 799184, CPU_time = 0.0 sec.
